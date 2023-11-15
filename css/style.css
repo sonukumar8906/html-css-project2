@@ -1,0 +1,268 @@
+/* Css.Reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* CSS Variable */
+:root {
+    --navbar-height: 20px;
+}
+
+/* NAVIGATION NAVBAR */
+#navbar {
+    display: flex;
+    align-items: center;
+    position: relative;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+#navbar::before {
+    content: '';
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 1;
+}
+
+/* NAVIGATION NAVBAR.logo and image */
+#logo img {
+    width: 56px;
+}
+
+#logo {
+    margin: 2px 12px 0 24px;
+}
+
+/* NAVIGATION NAVBAR.style list */
+
+ul {
+    display: flex;
+    list-style: none;
+}
+
+#navbar ul li a {
+    display: block;
+    text-decoration: none;
+    padding: 0px 20px;
+    font-size: 19px;
+    border-radius: 24px;
+    color: #fff;
+}
+
+#navbar ul li a:hover {
+    color: black;
+    background-color: white;
+}
+
+/* HOME SECTION */
+#home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 43vh;
+}
+
+#home::before {
+    content: '';
+    background: url('../img/bg/spaghetti.jpg') no-repeat center center/cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 52vh;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+    /* background-repeat: no-repeat; */
+}
+
+
+#home h1 {
+    color: white;
+    text-align: center;
+    font-family: 'Baloo Bhai 2', cursive;
+
+}
+
+#home p {
+    font-size: 1.5rem;
+    color: white;
+    text-align: center;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+/* SECTION CONTAINER SECVICE */
+#services {
+    margin: 0 7px;
+    display: flex;
+}
+
+#services .box {
+    /* border: 2px solid brown; */
+    background-color: #e4f2f2;
+    margin: 0 13px;
+    border-radius: 10px;
+}
+
+#services .box img {
+    height: 200px;
+    padding: 15px;
+    margin: auto;
+    display: block;
+}
+
+p.text {
+    font-size: 15px;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+/* CLIENT-SECTION */
+#client-section {
+    height: 185px;
+    width: 96vw;
+    margin: 30px 20px 0 20px;
+}
+
+#client-section::before {
+    content: '';
+    background: url('../img/bg/waffles.jpg');
+    position: absolute;
+    height: 185px;
+    width: 97%;
+    z-index: -1;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.clients {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 96vw;
+}
+
+.client-items img {
+    height:8vw;
+}
+
+/* Contact-box */
+#contact {
+    height: 26rem;
+    margin: 30px 20px 0 20px;
+    width: 97%;
+}
+
+.contact-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.contact-box input,
+.contact-box textarea {
+    width: 100%;
+    padding: 0.2rem;
+    border-radius: 9px;
+}
+
+.contact-box form {
+    width: 30%;
+}
+
+.form-group {
+    padding:0.12rem;;
+
+}
+
+.contact-box label {
+    font-size: 1rem;
+    font-family: 'Baloo Bhai 2', cursive;
+    color: #340fea;
+}
+
+#contact::before {
+    content: '';
+    position: absolute;
+    background: url(../img/bg/contact.jpg) no-repeat center center/cover;
+    width: 96vw;
+    height: 26rem;
+    z-index: -1;
+    opacity: 0.8;
+}
+
+/* utility classes */
+.h-primary {
+    font-size: 2.9rem;
+    padding: 12px;
+    margin: -8px 0 0 0;
+}
+
+.btn {
+    font-size: 17px;
+    background-color: #fa2821;
+    color: white;
+    padding: 4px 10px;
+    margin: 10px;
+    border: 2px solid #0b06b3;
+    border-radius: 7px;
+    font-family: 'Baloo Bhai 2', cursive;
+    cursor: pointer;
+}
+
+h1.h-primary {
+    font-size: 2.3rem;
+    padding: 4px;
+    color: #e1f2dc;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+h2.h-secondry,
+.text {
+    font-family: 'Baloo Bhai 2', cursive;
+    font-size: 1.5rem;
+    color: #d9faff;
+    padding: 3px;
+    text-align: center;
+    background-color: #115b88;
+    ;
+}
+
+.h-first {
+    text-align: center;
+    font-size: 35px;
+    color: #093382;
+    margin: 14px;
+    width: 96vw;
+}
+
+.heading-1 {
+    text-align: center;
+    color: #340fea;
+    font-size:2.rem;
+}
+
+.h-primary1 {
+    font-family: 'Baloo Bhai 2', cursive;
+    text-align: center;
+    position: relative;
+    background-color: #5fe8ff;
+    color: white;
+    padding: 4px 20px;
+    font-size: 28px;
+    margin:14px 20px 0 20px;
+}
+
+.foot {
+    position: relative;
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    color: white;
+    font-family: 'Baloo Bhai 2', cursive;
+}
